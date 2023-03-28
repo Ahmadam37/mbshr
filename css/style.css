@@ -53,7 +53,7 @@ body {
   font-style: normal;
   font-size: 20px;
   line-height: 20px;
-
+  padding: 10px;
   color: #250d61;
 }
 
@@ -85,7 +85,7 @@ body {
 }
 @media only screen and (max-width: 414px) {
   .row1 p {
-    font-size: 12px;
+    font-size: 11px;
   }
   .buttonCustomer button {
     width: 100px;
@@ -97,6 +97,7 @@ body {
   }
 }
 /* Main view */
+
 .container2 {
   max-width: 100% !important;
   height: auto;
@@ -105,11 +106,118 @@ body {
   border-radius: 200px;
   z-index: 99;
 }
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+}
 
-.checkbox1 {
-  background-color: none !important;
-  width: 4rem !important;
-  height: 30px !important;
+.switch > span {
+  position: absolute;
+  top: 14px;
+  pointer-events: none;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  width: 50%;
+  text-align: center;
+}
+
+input.check-toggle-round-flat:checked ~ .off {
+  color: #f36f25;
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+  color: #fff;
+}
+
+.switch > span.on {
+  left: 0;
+  padding-left: 2px;
+  display: unset;
+}
+.switch > span.on::after {
+  display: none;
+}
+
+.switch > span.off {
+  right: 0;
+  padding-right: 4px;
+  color: #fff;
+}
+
+.check-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.check-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input.check-toggle-round-flat + label {
+  padding: 2px;
+  width: 97px;
+  height: 35px;
+  background-color: #250d61 !important;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.check-toggle-round-flat + label:before,
+input.check-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+input.check-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-image: url("C:/Users/admin/Desktop/Development/Projects/Mbshr/img/saudi.png") !important;
+  background-repeat: no-repeat;
+  background-color: #250d61 !important;
+  -webkit--moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.check-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 48px;
+  background-image: url("C:/Users/admin/Desktop/Development/Projects/Mbshr/img/united-states.png") !important;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  -ms-border-radius: 52px;
+  -o-border-radius: 52px;
+  border-radius: 52px;
+  -webkit-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  -o-transition: margin 0.2s;
+  transition: margin 0.2s;
+}
+
+input.check-toggle-round-flat:checked + label {
+}
+
+input.check-toggle-round-flat:checked + label:after {
+  margin-left: 44px;
 }
 
 .form-switch .form-check-input:checked {
@@ -117,19 +225,16 @@ body {
   border-radius: 20px;
 }
 
-.form-check-input:checked {
-  background-color: #250d61 !important;
-  border-color: #250d61 !important;
-}
-.onbtn {
-}
-.ofbtn {
-  color: #8e9aa0;
-}
-
 /*  */
+
+.container3 {
+  margin-top: 100px;
+}
+.homeImage .mainImage {
+  margin-top: 6rem !important;
+}
 .paragra {
-  margin-top: 10rem !important;
+  margin-top: 6rem !important;
   position: relative;
 }
 .paragra:after {
@@ -193,6 +298,9 @@ body {
 }
 /*  client section */
 
+.container4 {
+  margin-top: 100px;
+}
 .clientHead {
 }
 
@@ -266,7 +374,7 @@ body {
 }
 
 .slick-initialized .slick-slide {
-  padding: 40px !important;
+  padding: 10px !important;
 }
 .center .slick-dots li {
   position: relative;
@@ -1183,4 +1291,19 @@ html[dir="rtl"] .cardBlogLink i {
 html[dir="rtl"] .viewAll .fa {
   rotate: 180deg;
   padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  html[dir="rtl"] .iconDetails span {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html[dir="rtl"] .container7 {
+    margin: auto;
+    background-image: url(../img/VectorAR.png) !important;
+    background-repeat: no-repeat;
+    background-size: 70% 430px;
+    background-position: 122px 40px;
+  }
 }
