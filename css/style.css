@@ -1104,6 +1104,8 @@ a #readMore {
   height: 100px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  position: relative;
+  z-index: 99;
 }
 .logoRow {
   padding-top: 200px !important;
@@ -1147,7 +1149,6 @@ a #readMore {
   background: #250d61;
   color: #fff;
   position: relative;
-  z-index: -1;
   margin-top: -100px;
 }
 .container11 hr {
