@@ -318,12 +318,26 @@ html[dir="rtl"] input.check-toggle-round-flat + label:after {
   .paragra #mainP {
     width: auto;
     height: auto;
+    text-align: center;
+    font-size: 40px;
+  }
+  .paragra {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 414px) {
+  .freeTrial {
+    width: 300px;
+  }
+  .contactSales {
+    width: 300px;
+    margin-top: 5px;
+  }
   .paragra #mainP {
     width: auto;
     height: auto;
+    text-align: center;
+    font-size: 35px;
   }
 }
 /*  client section */
@@ -505,6 +519,23 @@ html[dir="rtl"] input.check-toggle-round-flat + label:after {
   font-weight: 300;
   font-size: 28px;
   line-height: 28px;
+}
+@media only screen and (max-width: 990px) {
+  .iconDetails p {
+    font-family: "Lama Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #ffffff;
+  }
+  .iconDetails span {
+    font-family: "Lama Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 48px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
