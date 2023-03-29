@@ -42,6 +42,7 @@ body {
   background: #ffffff;
   border-radius: 15px;
 }
+
 .navbar-brand .logoImage {
   margin-left: 30px;
   max-width: 100%;
@@ -126,7 +127,7 @@ body {
 }
 
 input.check-toggle-round-flat:checked ~ .off {
-  color: #f36f25;
+  z-index: -1;
 }
 
 input.check-toggle-round-flat:checked ~ .on {
@@ -136,7 +137,6 @@ input.check-toggle-round-flat:checked ~ .on {
 .switch > span.on {
   left: 0;
   padding-left: 2px;
-  display: unset;
 }
 .switch > span.on::after {
   display: none;
@@ -168,7 +168,7 @@ input.check-toggle-round-flat + label {
   padding: 2px;
   width: 97px;
   height: 35px;
-  background-color: #250d61 !important;
+  background-color: #fff !important;
   -webkit-border-radius: 60px;
   -moz-border-radius: 60px;
   -ms-border-radius: 60px;
@@ -187,7 +187,6 @@ input.check-toggle-round-flat + label:before {
   left: 2px;
   bottom: 2px;
   right: 2px;
-  background-image: url("C:/Users/admin/Desktop/Development/Projects/Mbshr/img/saudi.png") !important;
   background-repeat: no-repeat;
   background-color: #250d61 !important;
   -webkit--moz-border-radius: 60px;
@@ -200,13 +199,14 @@ input.check-toggle-round-flat + label:after {
   left: 4px;
   bottom: 4px;
   width: 48px;
-  background-image: url("C:/Users/admin/Desktop/Development/Projects/Mbshr/img/united-states.png") !important;
+  background-image: url("../img/united-states.png") !important;
   background-repeat: no-repeat;
   -webkit-border-radius: 52px;
   -moz-border-radius: 52px;
   -ms-border-radius: 52px;
   -o-border-radius: 52px;
   border-radius: 52px;
+  z-index: 99;
   -webkit-transition: margin 0.2s;
   -moz-transition: margin 0.2s;
   -o-transition: margin 0.2s;
@@ -218,6 +218,7 @@ input.check-toggle-round-flat:checked + label {
 
 input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
+  background-image: url("../img/saudi.png") !important;
 }
 
 .form-switch .form-check-input:checked {
@@ -230,8 +231,21 @@ input.check-toggle-round-flat:checked + label:after {
 .container3 {
   margin-top: 100px;
 }
+.homeImage {
+  position: relative;
+}
 .homeImage .mainImage {
   margin-top: 6rem !important;
+}
+.homeImage:after {
+  content: "";
+  background: radial-gradient(circle, #7365de 0%, rgba(79, 57, 139, 0.01) 65%);
+  filter: blur(150px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: -1;
 }
 .paragra {
   margin-top: 6rem !important;
@@ -328,8 +342,8 @@ input.check-toggle-round-flat:checked + label:after {
 }
 .center .card {
   position: relative;
-  width: 255px;
-  height: 186px;
+  width: 200px !important;
+  height: 160px;
 
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0px 0px 57px rgba(37, 13, 97, 0.08);
@@ -394,7 +408,7 @@ input.check-toggle-round-flat:checked + label:after {
   background: #250d61 !important;
 }
 .center .slick-current .card {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .center .slick-dots li button:before {
@@ -1305,5 +1319,18 @@ html[dir="rtl"] .viewAll .fa {
     background-repeat: no-repeat;
     background-size: 70% 430px;
     background-position: 122px 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #fff;
+    margin-inline: -24px;
+  }
+  .navbar-brand .logoImage {
+    margin: 0;
+  }
+  .slick-dots li button {
+    width: 30px !important;
   }
 }
