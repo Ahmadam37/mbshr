@@ -115,10 +115,10 @@ body {
 
 .switch > span {
   position: absolute;
-  top: 14px;
+  top: 10px;
   pointer-events: none;
-  font-family: "Helvetica", Arial, sans-serif;
-  font-weight: bold;
+  font-family: "Lama Sans";
+  font-style: normal;
   font-size: 12px;
   text-transform: uppercase;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
@@ -166,7 +166,7 @@ input.check-toggle-round-flat:checked ~ .on {
 
 input.check-toggle-round-flat + label {
   padding: 2px;
-  width: 97px;
+  width: 80px;
   height: 35px;
   background-color: #fff !important;
   -webkit-border-radius: 60px;
@@ -200,6 +200,7 @@ input.check-toggle-round-flat + label:after {
   bottom: 4px;
   width: 48px;
   background-image: url("../img/united-states.png") !important;
+
   background-repeat: no-repeat;
   -webkit-border-radius: 52px;
   -moz-border-radius: 52px;
@@ -213,17 +214,32 @@ input.check-toggle-round-flat + label:after {
   transition: margin 0.2s;
 }
 
-input.check-toggle-round-flat:checked + label {
-}
-
 input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
   background-image: url("../img/saudi.png") !important;
 }
+html[dir="rtl"] input.check-toggle-round-flat:checked + label:after {
+  margin-left: 44px;
+  background-image: url("../img/united-states.png") !important;
+}
+html[dir="rtl"] input.check-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 48px;
+  background-image: url("../img/saudi.png") !important;
 
-.form-switch .form-check-input:checked {
-  --bs-form-switch-bg: url("C:/Users/admin/Desktop/Development/Projects/Mbshr/img/united-states.png") !important;
-  border-radius: 20px;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  -ms-border-radius: 52px;
+  -o-border-radius: 52px;
+  border-radius: 52px;
+  z-index: 99;
+  -webkit-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  -o-transition: margin 0.2s;
+  transition: margin 0.2s;
 }
 
 /*  */
@@ -1332,5 +1348,17 @@ html[dir="rtl"] .viewAll .fa {
   }
   .slick-dots li button {
     width: 30px !important;
+  }
+  .center .card {
+    position: relative;
+    width: 125px !important;
+    height: 130px;
+  }
+
+  .center .card img {
+    width: 100px;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
   }
 }

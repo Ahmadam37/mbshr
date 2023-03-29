@@ -122,16 +122,20 @@
                 <li class="nav-item">
                   <a class="nav-link">تسجيل الدخول</a>
                 </li>
-                <li class="nav-item">
-                  <div class="form-check form-switch">
+                <li style="position: relative" class="nav-item">
+                  <a
+                    style="position: absolute; z-index: 999; inset: 0"
+                    href="./index.html"
+                  ></a>
+                  <div class="switch">
                     <input
-                      class="form-check-input checkbox1"
+                      id="language-toggle"
+                      class="check-toggle check-toggle-round-flat"
                       type="checkbox"
-                      id="flexSwitchCheckChecked"
-                      checked
                     />
-                    <!-- <label for="" class="onbtn">On</label>
-                    <label for="" class="ofbtn">Off</label> -->
+                    <label for="language-toggle"></label>
+                    <span class="on" style="color: #fff">EN</span>
+                    <span style="font-size: 15px" class="off">AR</span>
                   </div>
                 </li>
               </ul>
@@ -160,7 +164,7 @@
                   تواصل مع فريق المبيعات
                 </button>
               </div>
-              <div class="col-lg-6 mt-5 ">
+              <div class="col-lg-6 mt-5">
                 <img class="mainImage" src="img/HomeAR.png" alt="" srcset="" />
               </div>
             </div>
@@ -359,7 +363,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-lg-5 reScanImage">
-                  <img id="rescanImg" src="img/resScan.png" alt="" srcset="" />
+                  <img id="rePayImg" src="img/resMneu.png" alt="" srcset="" />
                 </div>
               </div>
               <div class="row imageNumber2">
@@ -407,7 +411,7 @@
                   </div>
                 </div>
                 <div class="col-6 col-lg-5 rePayImage">
-                  <img id="rePayImg" src="img/resMneu.png" alt="" srcset="" />
+                  <img id="rescanImg" src="img/resScan.png" alt="" srcset="" />
                 </div>
               </div>
             </div>
