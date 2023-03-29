@@ -557,6 +557,12 @@ html[dir="rtl"] input.check-toggle-round-flat + label:after {
   }
 }
 @media only screen and (max-width: 414px) {
+  .clientHead .clientHeadPar2 {
+    font-size: 14px;
+  }
+  .clientHead .clientHeadPar1 {
+    font-size: 14px;
+  }
 }
 
 /* Features */
