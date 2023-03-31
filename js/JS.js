@@ -2,9 +2,9 @@ $(document).ready(function () {
   $(".center").slick({
     centerMode: true,
     centerPadding: "0px",
-    dots: true,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    // dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
     rtl: document.dir == "rtl" ? true : false,
     slidesToScroll: 1,
     slidesToShow: 5,

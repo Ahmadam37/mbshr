@@ -332,6 +332,10 @@ html[dir="rtl"] input.check-toggle-round-flat + label:after {
     text-align: center;
     font-size: 40px;
   }
+  .container3,
+  .mt-5 {
+    margin-top: 0px !important;
+  }
   .paragra {
     text-align: center;
   }
@@ -339,6 +343,10 @@ html[dir="rtl"] input.check-toggle-round-flat + label:after {
 @media only screen and (max-width: 414px) {
   .freeTrial {
     width: 300px;
+  }
+  .container3,
+  .mt-5 {
+    margin-top: 0px !important;
   }
   .contactSales {
     width: 300px;
