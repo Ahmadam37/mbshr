@@ -917,13 +917,15 @@ body {
   margin: 0 20px;
 }
 @media only screen and (max-width: 820px) {
-  .testmon .card-text {
-    text-align: center;
-    background-image: url("../img/BgCorner.png");
+  .imgCardText {
     background-size: 100%;
     background-position: bottom;
     background-repeat: no-repeat;
     padding: 7px 1px;
+  }
+  .testmon .card-text {
+    text-align: center;
+
     color: #4f398b;
   }
   .line h3,
@@ -938,7 +940,6 @@ body {
 }
 .bigCrad {
   max-width: 100%;
-  min-height: 407px;
   background: rgb(37, 13, 97);
   background: linear-gradient(
     135deg,
@@ -1066,12 +1067,8 @@ a #readMore {
 }
 @media only screen and (max-width: 820px) {
   .testmon .card-text {
-    text-align: center;
-    background-image: url("../img/BgCorner.png");
-    background-size: 100%;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    padding: 7px 1px;
+    margin-top: 30px;
+    font-size: 11px;
     color: #4f398b;
   }
   .cardsBlog {
