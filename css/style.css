@@ -1,5 +1,5 @@
 body {
-  font-family: "Lama Sans";
+  font-family: "Lama Sans" !important;
   font-style: normal;
 }
 @font-face {
