@@ -1,6 +1,7 @@
 body {
   font-family: "Lama Sans" !important;
   font-style: normal;
+  overflow-x: hidden;
 }
 @font-face {
   font-family: "Lama Sans";
