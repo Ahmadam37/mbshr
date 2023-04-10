@@ -373,7 +373,7 @@ html[dir="rtl"] input.check-toggle-round-flat + label:after {
   font-style: normal;
   font-weight: 600;
   font-size: 38px;
-  line-height: 38px;
+  line-height: 1.4;
   text-align: center;
   color: #1e1e1e;
 }
@@ -851,7 +851,7 @@ body {
 
 .testmon .card {
   max-width: 100%;
-  margin: 0px 20px;
+  margin: 0px 0px;
   display: block !important;
   min-height: 250px;
   background-image: url("../img/dotsBg.png");
