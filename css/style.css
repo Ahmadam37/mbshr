@@ -227,7 +227,7 @@ input.check-toggle-round-flat + label:after {
 
 input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
-  background-image: url("../img/saudi.png") !important;
+  background-image: url("../img/Saudi.png") !important;
 }
 html[dir="rtl"] input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
@@ -238,7 +238,7 @@ html[dir="rtl"] input.check-toggle-round-flat + label:after {
   left: 4px;
   bottom: 4px;
   width: 48px;
-  background-image: url("../img/saudi.png") !important;
+  background-image: url("../img/Saudi.png") !important;
 
   background-repeat: no-repeat;
   -webkit-border-radius: 52px;
