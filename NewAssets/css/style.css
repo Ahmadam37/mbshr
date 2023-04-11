@@ -410,13 +410,14 @@ html[dir="rtl"] input.check-toggle-round-flat + label:after {
 }
 .center .fa-chevron-left:before {
   position: absolute;
-  top: 150px;
-  left: 0px !important;
+  top: 50%;
+  left: -20px !important;
+  transform: translateY(-50%);
 }
 .center .fa-chevron-right:before {
   position: absolute !important;
-  right: 10px;
-  top: 150px;
+  right: -25px;
+  top: 50%;
 }
 .controls .next {
 }
@@ -844,7 +845,6 @@ body {
 }
 .peopleOpinions {
   text-align: center;
-
 }
 .testmon {
   margin-top: 50px;
